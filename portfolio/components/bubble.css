@@ -1,0 +1,77 @@
+.bubble {
+  padding-top: 2.1rem;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background-color: var(--card-bg-color);
+  color: var(--font-color);
+  box-shadow: var(--box-shadow);
+  transition: all 0.2s;
+  animation: 6s infinite ease-in-out;
+  animation-name: bubble-un;
+}
+
+.bubble2 {
+  padding-top: 2.1rem;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background-color: var(--card-bg-color);
+  color: var(--font-color);
+  box-shadow: var(--box-shadow);
+  transition: all 0.2s;
+  animation: 6s infinite ease-in-out;
+  animation-name: bubble-deux;
+}
+
+.brand-logo {
+  transition: all 0.2s;
+}
+
+.level {
+  opacity: 0;
+  position: relative;
+  bottom: 2.6rem;
+  transition: all 0.2s;
+  cursor: default;
+}
+
+.bubble:hover > .brand-logo {
+  opacity: 0.2;
+}
+
+.bubble2:hover > .brand-logo {
+  opacity: 0.2;
+}
+
+.bubble:hover > .level {
+  opacity: 0.7;
+}
+
+.bubble2:hover > .level {
+  opacity: 0.7;
+}
+
+@keyframes bubble-un {
+  0% {
+    transform: translate(0px, 0px) rotate(0.001deg);
+  }
+  50% {
+    transform: translate(0px, 0.8rem) rotate(0.001deg);
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(0.001deg);
+  }
+}
+
+@keyframes bubble-deux {
+  0% {
+    transform: translate(0px, 0.8rem) rotate(0.001deg);
+  }
+  50% {
+    transform: translate(0px, 0px) rotate(0.001deg);
+  }
+  100% {
+    transform: translate(0px, 0.8rem) rotate(0.001deg);
+  }
+}

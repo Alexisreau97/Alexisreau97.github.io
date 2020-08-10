@@ -1,0 +1,40 @@
+@import url("components/navbar.css");
+@import url("components/switch.css");
+@import url("components/mail.css");
+@import url("components/landing.css");
+@import url("components/card.css");
+@import url("components/bubble.css");
+@import url("components/project.css");
+@import url("components/footer.css");
+
+body {
+  background-color: var(--background-color);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --main-image: url(../img/portfolio.svg);
+  --footer-image: url(../img/footer.png);
+  --background-color: #fff;
+  --font-color: #202429;
+  --button-font-color: #fff;
+  --hight-color: #5b57f4;
+  --hight-bg-color: #dfdffd;
+  --card-bg-color: #fff;
+  --box-shadow: 0 1rem 2rem 0 rgba(36, 84, 159, 0.15);
+}
+
+[data-theme="dark"] {
+  --main-image: url(../img/portfolio2.svg);
+  --footer-image: url(../img/footer2.png);
+  --background-color: #2d2d2d;
+  --font-color: #fff;
+  --button-font-color: #2d2d2d;
+  --hight-color: #2bc9b6;
+  --hight-bg-color: #e2fff8;
+  --card-bg-color: #312f32;
+  --box-shadow: 0 1rem 2rem 0 rgba(10, 20, 37, 0.15);
+}

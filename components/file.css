@@ -1,0 +1,146 @@
+nav {
+  display: flex;
+  justify-content: end;
+}
+
+nav a {
+  margin-top: 1em;
+  text-decoration: none;
+  color: #000;
+  transition: all 0.2s;
+}
+
+nav a:first-child {
+  margin: 1em 1em 0 0;
+}
+
+nav a:hover {
+  background-image: url(../img/vector.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.landing_flex {
+  margin: 0 0 4em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 90vh;
+}
+
+.landing_flex img {
+  max-width: 100%;
+}
+
+.landing_flex h1 {
+  flex: 1;
+}
+
+.img_middle_align {
+  vertical-align: middle;
+}
+
+.mouse {
+  position: absolute;
+  bottom: 1em;
+  left: 46%;
+  width: 1.875em;
+  height: 3.125em;
+  border-radius: 10em;
+  border: 2px solid #2799f8;
+}
+
+.mouse::after {
+  transform: translate(-50%, 0);
+  content: "";
+  position: absolute;
+  display: block;
+  top: 25%;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  background: #2799f8;
+  border-radius: 50%;
+  animation: mouse 2s linear infinite;
+}
+
+@keyframes mouse {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, 20px);
+  }
+}
+
+/* faire un autre fichier */
+
+section {
+  margin: 0 0 3em 0;
+}
+
+.section_title {
+  font-size: 32px;
+  margin: 0 0 1em 0;
+}
+
+.section_flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section_realisation_flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.element {
+  margin: 0 1em 1.5em 0;
+  padding: 1em;
+  width: 100%;
+  border: 1px solid transparent;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.element:hover {
+  border: 1px solid #828282;
+}
+
+.element p {
+  margin: 0.3em 0;
+}
+
+.element_img {
+  width: 100%;
+}
+
+.element_title {
+  font-family: Roboto Medium;
+  text-transform: uppercase;
+}
+
+.element_date {
+  color: #828282;
+}
+
+.img_align {
+  vertical-align: bottom;
+  width: 19px;
+}
+
+@media screen and (max-width: 768px) {
+  .section_realisation_flex {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .section_flex {
+    flex-wrap: wrap;
+  }
+}

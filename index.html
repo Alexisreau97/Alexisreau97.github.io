@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Alexis Réau | Développeur WordPress</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="" />
+  <meta name="description" content="Bienvenue sur mon portfolio de développeur WordPress, vous pourrez y consulter mes formations, mes réalisations ainsi que toutes sortes d'autres informations. Bonne visite !" />
   <link rel="icon" type="image/png" href="img/avatar.png" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -15,10 +15,21 @@
 
 <body>
   <main>
-    <nav>
-      <a target="_blank" href="./CV Alexis Réau - Développeur WordPress.pdf">Mon CV</a>
-      <a target="_blank" href="https://www.linkedin.com/in/alexis-r%C3%A9au">LinkedIn</a>
-    </nav>
+    <div class="navigation">
+      <input type="checkbox" class="navigation-checkbox" id="navi-toggle">
+      <label for="navi-toggle" class="navigation-button">
+        <img src="/img/menu.svg" alt="" class="navigation-button-img">
+      </label>
+      <div class="navigation-background"></div>
+      <nav class="navigation-nav">
+        <ul class="navigation-list">
+          <li><a target="_blank" href="./CV Alexis Réau - Développeur WordPress.pdf" class="navigation-link"><img src="./img/cv.svg" alt="" class="link-img"></a></li>
+          <li><a target="_blank" href="mailto:alexis.reaupro@gmail.com" class="navigation-link"><img src="./img/mail.svg" alt="" class="link-img"></a></li>
+          <li><a target="_blank" href="tel:0623921538" class="navigation-link"><img src="./img/phone.svg" alt="" class="link-img"></a></li>
+          <li><a target="_blank" href="https://www.linkedin.com/in/alexis-r%C3%A9au" class="navigation-link"><img src="./img/linkedin.svg" alt="" class="link-img"></a></li>
+        </ul>
+      </nav>
+    </div>
 
     <div class="landing_flex">
       <div>
@@ -126,6 +137,12 @@
       </div>
     </section>
   </main>
+
+  <footer>
+    <p>
+      © 2021
+    </p>
+  </footer>
 
 </body>
 

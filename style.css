@@ -1,4 +1,7 @@
-@import url("components/file.css");
+@import url("components/nav.css");
+@import url("components/landing.css");
+@import url("components/section.css");
+@import url("components/footer.css");
 
 * {
   margin: 0;
@@ -37,11 +40,17 @@ html {
 }
 
 :root {
+  --avatar-image: url(../img/avatar.png);
+  --main-image: url(../img/wapuu.png), url(../img/wave.svg);
+  --main-imagemini: url(../img/wapuumini.png), url(../img/wavemini.svg);
   --background-color: #fff;
   --font-color: #131417;
 }
 
 [data-theme="dark"] {
+  --avatar-image: url(../img/darkavatar.png);
+  --main-image: url(../img/darkwapuu.png), url(../img/wave.svg);
+  --main-imagemini: url(../img/darkwapuumini.png), url(../img/wavemini.svg);
   --background-color: #131417;
   --font-color: #fff;
 }

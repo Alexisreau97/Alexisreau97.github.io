@@ -10,7 +10,7 @@
 @media screen and (max-width: 480px) {
   .landing_flex {
     height: 92vh;
-    padding-top: 8vh;
+    padding-top: 7vh;
   }
 }
 
@@ -24,11 +24,15 @@
 
 @media screen and (max-width: 480px) {
   .avatar {
-    height: 300px;
+    height: 350px;
     width: 500px;
-    background-image: var(--avatar-image);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .avatar {
+    height: 280px;
+    width: 500px;
   }
 }
 

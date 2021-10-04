@@ -55,6 +55,12 @@ body {
   transition: all 0.08s;
 }
 
+@media screen and (max-width: 768px) {
+  .cursor {
+    display: none;
+  }
+}
+
 :root {
   --avatar-image: url(../img/avatar.png);
   --main-image: url(../img/wapuu.png), url(../img/wave.svg);

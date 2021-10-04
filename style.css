@@ -33,10 +33,26 @@ html {
   background-color: var(--background-color);
   color: var(--font-color);
   font-family: Roboto;
+  scroll-behavior: smooth;
+  transition: all 0.3s;
+}
+
+body {
   background-image: url(./img/wordpress-logo.svg);
   background-repeat: no-repeat;
   background-position: -50px -50px;
-  scroll-behavior: smooth;
+}
+
+.cursor {
+  width: 8px;
+  height: 8px;
+  background: #2799f8;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 99;
+  transition: all 0.08s;
 }
 
 :root {

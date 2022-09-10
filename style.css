@@ -1,0 +1,283 @@
+@font-face {
+  font-family: 'NotoSans-Regular';
+  src: url("../font/NotoSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'NotoSans-Bold';
+  src: url("../font/NotoSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'NotoSans-Black';
+  src: url("../font/NotoSans-Black.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #B9DAE8;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.row {
+  --bs-gutter-x: 2.5rem;
+  --bs-gutter-y: 0;
+}
+
+.intro {
+  padding-bottom: 40px;
+}
+
+.intro .photo {
+  rotate: -6deg;
+}
+
+.intro .content {
+  width: 100%;
+  height: 100%;
+}
+
+.intro .title {
+  font-family: 'NotoSans-Bold';
+  font-size: 45px;
+  line-height: 55px;
+  color: #E5FF3D;
+  margin-bottom: 20px;
+}
+
+.intro .title span {
+  display: block;
+  text-align: right;
+}
+
+@media screen and (max-width: 992px) {
+  .intro .title {
+    margin-top: 50px;
+  }
+  .intro .title span {
+    display: inherit;
+    text-align: center;
+  }
+}
+
+.intro .link {
+  display: block;
+  font-family: 'NotoSans-Regular';
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.intro .link:hover {
+  text-decoration: underline;
+}
+
+.intro .text {
+  display: block;
+  font-family: 'NotoSans-Regular';
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.experience .card:after {
+  content: url("../img/yellow-scotch.png");
+  position: absolute;
+  top: -12.5px;
+  left: 43%;
+  rotate: 2deg;
+}
+
+.formation .card:after {
+  content: url("../img/violet-scotch.png");
+  position: absolute;
+  top: 0px;
+  right: -30px;
+  rotate: 45deg;
+}
+
+.cards {
+  padding: 30px 0px;
+}
+
+.cards .title {
+  font-family: 'NotoSans-Bold';
+  font-size: 34px;
+  line-height: 46px;
+  color: #E5FF3D;
+  margin-bottom: 10px;
+}
+
+.cards .card {
+  position: relative;
+  border: none;
+  border-radius: 0px;
+  padding: 25px;
+  height: 100%;
+}
+
+.cards .card:before {
+  content: "";
+  background-color: #603BFF;
+  width: 45px;
+  height: 5px;
+  position: absolute;
+  top: 0;
+  left: 25px;
+}
+
+.cards .card .card-logo {
+  height: 30px;
+}
+
+.cards .card .card-title {
+  font-family: 'NotoSans-Black';
+  font-size: 24px;
+  line-height: 24px;
+  color: #603BFF;
+}
+
+.cards .card .date {
+  font-family: 'NotoSans-Regular';
+  font-size: 18px;
+  line-height: 18px;
+  color: #828282;
+  margin-top: 15px;
+  margin-bottom: 7.5px;
+}
+
+.cards .card .description {
+  font-family: 'NotoSans-Regular';
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.swiper-cards {
+  padding: 30px 0px;
+}
+
+.swiper-cards .title {
+  font-family: 'NotoSans-Bold';
+  font-size: 34px;
+  line-height: 46px;
+  color: #E5FF3D;
+  margin-bottom: 0px;
+}
+
+.swiper-cards .swiper-wrapper {
+  padding: 10px 0px 10px 0px;
+}
+
+.swiper-cards .swiper-slide {
+  overflow: visible;
+}
+
+.swiper-cards .swiper-button-next {
+  right: 35px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.swiper-cards .swiper-button-next:after {
+  content: url("../img/right-arrow.svg");
+}
+
+.swiper-cards .swiper-button-prev {
+  left: 35px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.swiper-cards .swiper-button-prev:after {
+  content: url("../img/left-arrow.svg");
+}
+
+.swiper-cards .card {
+  position: relative;
+  border: none;
+  border-radius: 20px 20px 20px 20px;
+  height: 100%;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.swiper-cards .card:before {
+  content: url("../img/deco.svg");
+  position: absolute;
+  top: 10px;
+  left: 44%;
+}
+
+.swiper-cards .card:hover {
+  rotate: 3deg;
+}
+
+.swiper-cards .card .screen {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.swiper-cards .card .content {
+  padding: 10px 25px;
+}
+
+.swiper-cards .card .site-title {
+  font-family: 'NotoSans-Black';
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.swiper-cards .card .site-description {
+  font-family: 'NotoSans-Bold';
+  font-size: 18px;
+  line-height: 18px;
+  color: #603BFF;
+}
+
+.competence {
+  padding-top: -10px;
+}
+
+.competence .content {
+  height: 100%;
+}
+
+.competence .phone {
+  rotate: 6deg;
+}
+
+@media screen and (max-width: 992px) {
+  .competence .phone {
+    rotate: 0deg;
+    margin-top: 20px;
+  }
+}
+
+.splash {
+  z-index: -1;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.copyright {
+  text-align: center;
+  font-family: 'NotoSans-Regular';
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+/*# sourceMappingURL=style.css.map */

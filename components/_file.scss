@@ -20,13 +20,47 @@
 
 body{
   background-color: $my-blue;
-  overflow-x: hidden;
   position: relative;
 }
 
 .row {
   --bs-gutter-x: 2.5rem;
   --bs-gutter-y: 0;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  --bs-gutter-x: 3.5rem;
+}
+
+.rellax{
+  margin:0;
+  position:absolute;
+  pointer-events:none;
+  z-index:-1;
+}
+.rellax:nth-child(1){
+  top:150px;
+  left:27.5vw;
+  @media screen and (max-width: 992px) {
+    top:350px;
+    left: 20vw;
+  }
+}
+.rellax:nth-child(2){
+  top:750px;
+  left:60vw;
+  @media screen and (max-width: 992px) {
+    top:950px;
+    left: 20vw;
+  }
+}
+.rellax:nth-child(3){
+  top:1300px;
+  left:42.5vw;
+  @media screen and (max-width: 992px) {
+    top:1700px;
+    left: 20vw;
+  }
 }
 
 .intro{
@@ -39,9 +73,9 @@ body{
     height: 100%;
   }
   .title{
-    font-family: 'NotoSans-Bold';
-    font-size: 45px;
-    line-height: 55px;
+    font-family: 'NotoSans-Black';
+    font-size: 55px;
+    line-height: 65px;
     color: $my-yellow;
     margin-bottom: 20px;
     span{
@@ -73,6 +107,14 @@ body{
     font-size: 18px;
     line-height: 25px;
     color: $my-white;
+  }
+  .download{
+    margin-top: 20px;
+    rotate: 3deg;
+    transition: all .3s ease;
+    &:hover{
+      rotate: 0deg;
+    }
   }
 }
 
@@ -128,6 +170,10 @@ body{
       font-size: 24px;
       line-height: 24px;
       color: $my-violet;
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+      }
     }
     .date{
       font-family: 'NotoSans-Regular';
@@ -167,12 +213,18 @@ body{
     &:after{
       content: url("../img/right-arrow.svg");
     }
+    &:hover{
+      transform: scale(1.1);
+    }
   }
   .swiper-button-prev{
     left: 35px;
     transition: all .3s ease;
     &:after{
       content: url("../img/left-arrow.svg");
+    }
+    &:hover{
+      transform: scale(1.1);
     }
   }
   .card{
@@ -218,9 +270,12 @@ body{
     height: 100%;
   }
   .phone{
-    rotate: 6deg;
-    @media screen and (max-width: 992px) {
+    rotate: 3deg;
+    transition: all .3s ease;
+    &:hover{
       rotate: 0deg;
+    }
+    @media screen and (max-width: 992px) {
       margin-top: 20px;
     }
   }
@@ -231,14 +286,18 @@ body{
   position: absolute;
   bottom: 0px;
   right: 0px;
+  @media screen and (max-width: 992px) {
+    transform: scale(.5);
+    transform-origin: bottom right;
+  }
 }
 
 .copyright{
   text-align: center;
-  font-family: 'NotoSans-Regular';
+  font-family: 'NotoSans-Bold';
   font-size: 18px;
   line-height: 25px;
-  color: $my-white;
+  color: $my-violet;
   padding-top: 20px;
   padding-bottom: 50px;
 }

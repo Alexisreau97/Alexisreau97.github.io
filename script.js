@@ -1,5 +1,7 @@
 AOS.init();
 
+var rellax = new Rellax(".rellax");
+
 var realisationSwiper = new Swiper(".realisationSwiper", {
     slidesPerView: 1,
     spaceBetween: 40,

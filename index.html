@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>Portfolio Alexis Réau - Développeur WordPress</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
+    <meta name="description" content="Ceci est mon Portfolio de Développeur WordPress, vous pourrez y retrouver les différentes étapes de mon parcours professionnel ainsi que mes réalisations. Bonne visite !" />
     <link rel="icon" type="image/png" href="./img/logo.png" />
     <!-- bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
@@ -17,11 +17,24 @@
   </head>
 
   <body>
+    <div class="particules">
+      <div class="rellax" data-rellax-speed="-2">
+        <img src="./img/white-deco.png" alt="Particule">
+      </div>
+      <div class="rellax" data-rellax-speed="-2">
+        <img src="./img/yellow-deco.png" alt="Particule">
+      </div>
+      <div class="rellax" data-rellax-speed="-2">
+        <img src="./img/white-deco.png" alt="Particule">
+      </div>
+    </div>
     <div class="intro">
       <div class="container">
         <div class="row">
           <div class="col-12 col-lg-6">
-            <img src="./img/photo.svg" alt="" class="photo img-fluid" data-aos="fade-down" data-aos-duration="1000">
+            <div class="content d-flex flex-column justify-content-center align-items-center align-items-lg-start">
+              <img src="./img/photo.svg" alt="" class="photo img-fluid" data-aos="fade-down" data-aos-duration="1000">
+            </div>
           </div>
           <div class="col-12 col-lg-6">
             <div class="content d-flex flex-column justify-content-center align-items-center align-items-lg-end">
@@ -30,6 +43,9 @@
               <a href="tel:0623921538" class="link">06 23 92 15 38</a>
               <div class="text">Viroflay, Ile de France</div>
               <div class="text">30 Novembre 1997</div>
+              <a href="./CV ALEXIS RÉAU - Développeur WordPress.pdf" target="_blank" class="download" download>
+                <img src="./img/download.png" alt="" class="img-fluid">
+              </a>
             </div>
           </div>
         </div>
@@ -42,7 +58,7 @@
           <div class="col-12 col-lg-6 mb-lg-0 mb-4">
             <div class="card">
               <div class="d-flex justify-content-between">
-                <div class="card-title">Let's clic</div>
+                <a href="https://www.lets-clic.com/" target="_blank" class="card-title">Let's clic</a>
                 <img src="./img/letsclic.png" alt="" class="card-logo">
               </div>
               <div class="date">2021 - 2022</div>
@@ -53,7 +69,7 @@
           <div class="col-12 col-lg-6 mb-lg-0 mb-4">
             <div class="card">
               <div class="d-flex justify-content-between">
-                <div class="card-title">Eanet</div>
+                <a href="https://www.eanet.fr/" target="_blank" class="card-title">Eanet</a>
                 <img src="./img/eanet.png" alt="" class="card-logo">
               </div>
               <div class="date">2020 - 2021</div>
@@ -71,7 +87,7 @@
           <div class="col-12 col-lg-4 mb-lg-0 mb-4">
             <div class="card">
               <div class="d-flex justify-content-between">
-                <div class="card-title">Institut F2I</div>
+                <a href="https://www.institut-f2i.fr" target="_blank" class="card-title">Institut F2I</a>
                 <img src="./img/f2i.png" alt="" class="card-logo">
               </div>
               <div class="date">2021 - 2022</div>
@@ -81,7 +97,7 @@
           <div class="col-12 col-lg-4 mb-lg-0 mb-4">
             <div class="card">
               <div class="d-flex justify-content-between">
-                <div class="card-title">The Hacking Project</div>
+                <a href="https://www.thehackingproject.org/" target="_blank" class="card-title">The Hacking Project</a>
                 <img src="./img/thp.png" alt="" class="card-logo">
               </div>
               <div class="date">2018 - 2019</div>
@@ -91,7 +107,7 @@
           <div class="col-12 col-lg-4 mb-lg-0 mb-4">
             <div class="card">
               <div class="d-flex justify-content-between">
-                <div class="card-title">ESCEN</div>
+                <a href="https://www.escen.fr/" target="_blank" class="card-title">ESCEN</a>
                 <img src="./img/escen.png" alt="" class="card-logo">
               </div>
               <div class="date">2017 - 2018</div>
@@ -182,6 +198,8 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!-- aos js -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- rellax js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js" integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- custom js -->
     <script src="script.js"></script>
   </body>

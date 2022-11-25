@@ -1,0 +1,303 @@
+@font-face {
+  font-family: 'NotoSans-Regular';
+  src: url('../font/NotoSans-Regular.ttf');
+}
+@font-face {
+  font-family: 'NotoSans-Bold';
+  src: url('../font/NotoSans-Bold.ttf');
+}
+@font-face {
+  font-family: 'NotoSans-Black';
+  src: url('../font/NotoSans-Black.ttf');
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: $my-blue;
+  position: relative;
+}
+
+.row {
+  --bs-gutter-x: 2.5rem;
+  --bs-gutter-y: 0;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  --bs-gutter-x: 3.5rem;
+}
+
+.rellax{
+  margin:0;
+  position:absolute;
+  pointer-events:none;
+  z-index:-1;
+}
+.rellax:nth-child(1){
+  top:150px;
+  left:27.5vw;
+  @media screen and (max-width: 992px) {
+    top:350px;
+    left: 20vw;
+  }
+}
+.rellax:nth-child(2){
+  top:750px;
+  left:60vw;
+  @media screen and (max-width: 992px) {
+    top:950px;
+    left: 20vw;
+  }
+}
+.rellax:nth-child(3){
+  top:1300px;
+  left:42.5vw;
+  @media screen and (max-width: 992px) {
+    top:1700px;
+    left: 20vw;
+  }
+}
+
+.intro{
+  padding-bottom: 40px;
+  .photo{
+    rotate: -6deg;
+  }
+  .content{
+    width: 100%;
+    height: 100%;
+  }
+  .title{
+    font-family: 'NotoSans-Black';
+    font-size: 55px;
+    line-height: 65px;
+    color: $my-yellow;
+    margin-bottom: 20px;
+    span{
+      display: block;
+      text-align: right;
+    }
+    @media screen and (max-width: 992px) {
+      margin-top: 50px;
+      span{
+        display: inherit;
+        text-align: center;
+      }
+    }
+  }
+  .link{
+    display: block;
+    font-family: 'NotoSans-Regular';
+    font-size: 18px;
+    line-height: 25px;
+    color: $my-white;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  .text{
+    display: block;
+    font-family: 'NotoSans-Regular';
+    font-size: 18px;
+    line-height: 25px;
+    color: $my-white;
+  }
+  .download{
+    margin-top: 20px;
+    rotate: 3deg;
+    transition: all .3s ease;
+    &:hover{
+      rotate: 0deg;
+    }
+  }
+}
+
+.experience .card{
+  &:after{
+    content: url("../img/yellow-scotch.png");
+    position: absolute;
+    top: -12.5px;
+    left: 43%;
+    rotate: 2deg;
+  }
+}
+
+.formation .card{
+  &:after{
+    content: url("../img/violet-scotch.png");
+    position: absolute;
+    top: 0px;
+    right: -30px;
+    rotate: 45deg;
+  }
+}
+
+.cards{
+  padding: 30px 0px;
+  .title{
+    font-family: 'NotoSans-Bold';
+    font-size: 34px;
+    line-height: 46px;
+    color: $my-yellow;
+    margin-bottom: 10px;
+  }
+  .card{
+    position: relative;
+    border: none;
+    border-radius: 0px;
+    padding: 25px;
+    height: 100%;
+    &:before{
+      content: "";
+      background-color: $my-violet;
+      width: 45px;
+      height: 5px;
+      position: absolute;
+      top: 0;
+      left: 25px;
+    }
+    .card-logo{
+      height: 30px;
+    }
+    .card-title{
+      font-family: 'NotoSans-Black';
+      font-size: 24px;
+      line-height: 24px;
+      color: $my-violet;
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+    .date{
+      font-family: 'NotoSans-Regular';
+      font-size: 18px;
+      line-height: 18px;
+      color: $my-gray;
+      margin-top: 15px;
+      margin-bottom: 7.5px;
+    }
+    .description{
+      font-family: 'NotoSans-Regular';
+      font-size: 18px;
+      line-height: 22px;
+      color: $my-black;
+    }
+  }
+}
+
+.swiper-cards{
+  padding: 30px 0px;
+  .title{
+    font-family: 'NotoSans-Bold';
+    font-size: 34px;
+    line-height: 46px;
+    color: $my-yellow;
+    margin-bottom: 0px;
+  }
+  .swiper-wrapper{
+    padding: 10px 0px 10px 0px;
+  }
+  .swiper-slide{
+    overflow: visible;
+  }
+  .swiper-button-next{
+    right: 35px;
+    transition: all .3s ease;
+    &:after{
+      content: url("../img/right-arrow.svg");
+    }
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+  .swiper-button-prev{
+    left: 35px;
+    transition: all .3s ease;
+    &:after{
+      content: url("../img/left-arrow.svg");
+    }
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+  .card{
+    position: relative;
+    border: none;
+    border-radius: 20px 20px 20px 20px;
+    height: 100%;
+    transition: all .3s ease;
+    &:before{
+      content: url("../img/deco.svg");
+      position: absolute;
+      top: 10px;
+      left: 44%;
+    }
+    &:hover{
+      rotate: 3deg;
+    }
+    .screen{
+      width: 100%;
+      border-radius: 20px 20px 0px 0px;
+    }
+    .content{
+      padding: 10px 25px;
+    }
+    .site-title{
+      font-family: 'NotoSans-Black';
+      font-size: 24px;
+      line-height: 24px;
+      color: $my-black;
+    }
+    .site-description{
+      font-family: 'NotoSans-Bold';
+      font-size: 18px;
+      line-height: 18px;
+      color: $my-violet;
+    }
+  }
+}
+
+.competence{
+  padding-top: -10px;
+  .content{
+    height: 100%;
+  }
+  .phone{
+    rotate: 3deg;
+    transition: all .3s ease;
+    &:hover{
+      rotate: 0deg;
+    }
+    @media screen and (max-width: 992px) {
+      margin-top: 20px;
+    }
+  }
+}
+
+.splash{
+  z-index: -1;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  @media screen and (max-width: 992px) {
+    transform: scale(.5);
+    transform-origin: bottom right;
+  }
+}
+
+.copyright{
+  text-align: center;
+  font-family: 'NotoSans-Bold';
+  font-size: 18px;
+  line-height: 25px;
+  color: $my-violet;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}

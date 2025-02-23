@@ -24,6 +24,7 @@
 body {
   background-color: #B9DAE8;
   position: relative;
+  overflow-x: hidden;
 }
 
 .row {
@@ -224,6 +225,10 @@ body {
   color: #000000;
 }
 
+.swiper {
+  overflow: visible;
+}
+
 .swiper-cards {
   padding: 30px 0px;
 }
@@ -308,6 +313,7 @@ body {
   font-size: 24px;
   line-height: 24px;
   color: #000000;
+  margin-bottom: 5px;
 }
 
 .swiper-cards .card .site-description {

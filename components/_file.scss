@@ -21,6 +21,7 @@
 body{
   background-color: $my-blue;
   position: relative;
+  overflow-x: hidden;
 }
 
 .row {
@@ -192,6 +193,10 @@ body{
   }
 }
 
+.swiper {
+  overflow: visible;
+}
+
 .swiper-cards{
   padding: 30px 0px;
   .title{
@@ -254,6 +259,7 @@ body{
       font-size: 24px;
       line-height: 24px;
       color: $my-black;
+      margin-bottom: 5px;
     }
     .site-description{
       font-family: 'NotoSans-Bold';
